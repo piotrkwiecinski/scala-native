@@ -3,6 +3,9 @@ sudo: required
 scala:
   - "2.11.8"
 
+git:
+  depth: 10
+
 matrix:
   include:
     - os: linux
@@ -73,3 +76,4 @@ cache:
     - $HOME/.coursier
     - $HOME/.ivy2/cache
     - $HOME/.sbt/boot/
+    - $HOME/Library/Caches/Homebrew
