@@ -8,7 +8,7 @@ IFS=$'\n\t'
 if [ "$(uname)" == "Darwin" ]; then
 
     brew update
-    brew install sbt jq bdw-gc re2 llvm@4
+    brew install --retry sbt jq bdw-gc re2 llvm@4
     brew link bdw-gc
     export PATH="/usr/local/opt/llvm@4/bin:$PATH"
 
